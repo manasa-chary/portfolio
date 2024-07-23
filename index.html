@@ -1,12 +1,52 @@
-<!DOCTYPE html>
 <html>
-<head>
-<title>Page Title</title>
-</head>
+  <head>
+    <style>
+    body {
+    background: limegreen;
+    padding:10px;
+    
+    }
+    .loader {
+    margin: auto;
+    height: 100%;
+    padding:1rem;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    }
+    .loader .inner {
+    	padding: 1rem;
+        height:max-content;
+        display:flex;
+        flex-direction: column;
+        gap:1rem;
+    }
+    .loader .inner span {
+    	padding:3rem;
+        background: yellow;
+        animation: rotating 0.5s infinite linear;
+        border-radius: 4px;
+    }
+    @keyframes rotating {
+    	0% {
+        	transform: rotate(90deg);
+        }
+    }
+    
+   
+    </style>
+  
+  </head>
 <body>
-
-<h1>This is my portfolio</h1>
-<p>Started learning web dev qqwfq</p>
-
+	<div class="loader">
+      <div class="inner">
+      	<span></span>
+      	<span></span>
+      </div>
+      <div class="inner">
+      	<span></span>
+      	<span></span>
+      </div>
+     </div>
 </body>
 </html>
